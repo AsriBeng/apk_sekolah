@@ -1,58 +1,113 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+  <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" width="350">
 
-## About Laravel
+  # 🏫 absen-sekolah
+  ### Aplikasi Absensi Sekolah Berbasis Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+  Sistem manajemen absensi digital yang responsif, aman, dan efisien untuk mendukung operasional Madrasah Tsanawiyah (MTS).
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  [![PHP Version](https://img.shields.io/badge/PHP-8.3-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+  [![Laravel Version](https://img.shields.io/badge/Laravel-13.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+  [![MySQL](https://img.shields.io/badge/MySQL-Supported-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+  [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+</div>
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 📌 Tentang Proyek
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+**Absen-Sekolah** hadir untuk memodernisasi pencatatan kehadiran dan staf pengajar. Dirancang dengan antarmuka yang ramah pengguna serta fleksibilitas tinggi, aplikasi ini mempermudah proses pemantauan absensi secara real-time.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+### ✨ Fitur Utama
 
-## Agentic Development
+- 👨‍🏫 **Absensi Guru & Staf**: Pencatatan jam masuk dan pulang secara akurat.
+- 📊 **Laporan & Rekapitulasi**: Ekspor rekap kehadiran harian, mingguan, dan bulanan.
+- 🔐 **Manajemen Akses**: Sistem autentikasi dan otorisasi role berbasis keamanan tinggi.
+- 📱 **Desain Responsif**: Otomatis menyesuaikan tampilan di layar HP, tablet, maupun PC.
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+---
 
-```bash
-composer require laravel/boost --dev
+## ⚙️ Persyaratan Sistem
 
-php artisan boost:install
-```
+Pastikan lingkungan server lokal Anda memenuhi spesifikasi minimum berikut:
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+| Komponen | Versi Minimum / Catatan |
+| :--- | :--- |
+| **PHP** | `^8.3` |
+| **Framework** | Laravel `13.x` |
+| **Database** | MySQL / MariaDB / SQLite |
+| **Package Manager** | Composer `2.x` & Node.js (`npm`) |
+| **Local Server** | Laragon (Rekomendasi) / XAMPP |
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🚀 Panduan Instalasi & Setup
 
-## Code of Conduct
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek di lingkungan lokal:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 1. Clone Repository
+<pre><code>git clone https://github.com/AsriBeng/absen-sekolah.git
+cd absen-sekolah</code></pre>
 
-## Security Vulnerabilities
+### 2. Instalasi Dependensi
+<pre><code># Install paket backend PHP
+composer install
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Install paket frontend Node.js
+npm install</code></pre>
 
-## License
+### 3. Konfigurasi Environment
+<pre><code># Duplikasi file konfig .env
+cp .env.example .env
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Generate application key
+php artisan key:generate</code></pre>
+
+### 4. Setup Database & Migrasi
+Sesuaikan kredensial database pada file `.env`, lalu jalankan migrasi beserta data awal:
+<pre><code>php artisan migrate --seed</code></pre>
+
+### 5. Build Assets & Jalankan Server
+<pre><code># Build stylesheet & script
+npm run build
+
+# Jalankan server lokal
+php artisan serve</code></pre>
+
+Aplikasi sekarang dapat diakses melalui browser di **`http://127.0.0.1:8000`**.
+
+> 💡 **Pengguna Laragon:** Anda cukup menempatkan folder proyek di `C:\laragon\www\absen-sekolah` dan mengontrol virtual host bawaan Laragon (`http://absen-sekolah.test`).
+
+---
+
+## 🛠️ Perintah Pengembangan (Development)
+
+- **Menjalankan Dev Server Frontend (Hot Reload):**
+  <pre><code>npm run dev</code></pre>
+- **Menjalankan Automated Testing:**
+  <pre><code>php artisan test</code></pre>
+- **Merapikan Format Kode (Formatting):**
+  <pre><code>php artisan pint</code></pre>
+
+---
+
+## 👨‍💻 Pengembang
+
+<div align="center">
+
+  **AsriBeng**  
+  *Software Developer & IT Specialist*
+
+  [![GitHub](https://img.shields.io/badge/GitHub-AsriBeng-181717?style=flat-square&logo=github)](https://github.com/AsriBeng)
+  [![Email](https://img.shields.io/badge/Email-asrisakbar123%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:asrisakbar123@gmail.com)
+
+</div>
+
+---
+
+<div align="center">
+  <sub>Dibuat dengan ❤️ untuk kemudahan pengelolaan presensi pendidikan.</sub>
+</div>
